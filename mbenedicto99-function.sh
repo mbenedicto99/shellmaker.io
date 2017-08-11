@@ -18,10 +18,7 @@ rc_var ()
 	variable=${1-$DEFAULT}
 	echo "variable = $variable"
 
-  	if [ "$2" ]
-     	then
-       		echo "-Parameter #2 is \"$2\".-"
-   	fi
+  	[ "$2" ] && echo "-Parameter #2 is \"$2\".-"
 
       return 0
  }
